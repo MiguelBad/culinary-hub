@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/recipe_details.css">
+    <title>Recipe Card</title>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="index.html"><img class='logo' src="images/logo_black.webp" alt="Website Logo"></a>
+            <a class="hamburger-menu">
+                <div class="burger-part burger-top-part"></div>
+                <div class="burger-part burger-middle-part"></div>
+                <div class="burger-part burger-bottom-part"></div>
+            </a>
+            <ul class="nav-link-list">
+                <li><a class='nav-link' href="about1.html">About</a></li>
+                <li><a class="recipe-list-link nav-link" href="index.html?page=recipe_list">Recipe List</a></li>
+                <li><a class='saved-recipes nav-link' href="index.html?page=saved_recipes">Saved</a></li>
+                <li><a class='nav-link' href="preferences.html">Preferences</a></li>
+                <li><a class='nav-link' href="add_recipe.html">Add Recipe</a></li>
+                <li><a class='nav-link' href="randomiser.html">Randomiser</a></li>
+                <li><a class='nav-link' href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="breadcrumb-navigation-alignment">
+            <div class="breadcrumb-navigation-container">
+                <a class="breadcrumb-navigation" href="index.html">Home</a>
+                <span class="material-icons">chevron_right</span>
+            </div>
+        </nav>
+        <div id="recipes-container" class="recipe-catalogue">
+            <!-- Initial static template for recipe details -->
+            <template>
+                <div class="title-caption-container">
+                <img src="" alt="Recipe Image" id="recipe-image" class="recipe-image">
+                    <h2 id="recipe-title"></h2>
+                    <p id="recipe-description"></p>
+                </div>
+                <div class="recipe-details">
+                    <span><strong>Prep Time:</strong> <span id="prep-time"></span></span>
+                    <span><strong>Allergens:</strong> <span id="allergens"></span></span>
+                    <span><strong>Skill Level:</strong> <span id="cooking-skill-level"></span></span>
+                </div>
+                <div class="tabs">
+                    <button class="tab-button" onclick="showTab('ingredients')">Ingredients</button>
+                    <button class="tab-button" onclick="showTab('preparation')">Preparation</button>
+                    <button class="tab-button" onclick="showTab('nutrition')">Nutrition</button>
+                </div>
+            </template>
+            <div id="tab-content" class="tab-content">
+                <!-- Content for tabs will be injected here -->
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/recipe-details.js"></script>
+</body>
+</html>

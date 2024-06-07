@@ -1,5 +1,5 @@
 # School Project
-This website was initially committed on [Bitbucket](https://pages.github.com/](https://group-16-hit226.bitbucket.io/).
+This website was initially committed on [Bitbucket](https://group-16-hit226.bitbucket.io/).
 
 **Other Contributors:**
 1. Benjamin Denison-Love

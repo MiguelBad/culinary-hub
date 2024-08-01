@@ -1,11 +1,6 @@
 # School Project
 This website was initially committed on [Bitbucket](https://group-16-hit226.bitbucket.io/).
 
-**Other Contributors:**
-1. Benjamin Denison-Love
-2. Aayan Rai
-3. Muhammed Abed
-
 ## Project Brief
 
 This website aims to create a responsive and visually appealing cooking website that provides recipes, cooking tips, and any additional information and relevant information about the team and how to contact them within the site. The project aims to target home cooks, food enthusiasts, or simply individuals seeking culinary inspiration on matters of recipes they are unfamiliar with. The website also offers the following features:

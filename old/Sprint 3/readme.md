@@ -1,13 +1,6 @@
 Design  Worksheet
 =============
 
-**Team member names:**
-
- 1. Juan Miguel Badayos
- 2. Benjamin Denison-Love
- 3. Aayan Rai
- 4. Muhammed Abed
-
 Project Brief
 -------------
 

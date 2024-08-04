@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async function () {
+document.addEventListener('DOMContentLoaded', async function() {
     let recipeData = await loadJSON() // load data from json
 
     // get users preferences and not show those recipes with that preference
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (initialUserScreen < 1300) {
         cardsToDisplay = 2
         displayTwoCards = true
-    } 
+    }
     else {
         cardsToDisplay = 3
         displayTwoCards = false
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (userScreen < 1300) {
             thirdSuggestionCard.style.display = 'none'
             thrirdBreakfastCard.style.display = 'none'
-        } 
+        }
         else {
             thirdSuggestionCard.style.display = 'block'
             thrirdBreakfastCard.style.display = 'block'
@@ -93,7 +93,7 @@ function navBar() {
     const topPartBurger = document.querySelector('.burger-top-part')
     const middlePartBurger = document.querySelector('.burger-middle-part')
     const bottomPartBurger = document.querySelector('.burger-bottom-part')
-    hamburgerIcon.addEventListener('click', function () {
+    hamburgerIcon.addEventListener('click', function() {
         navigationMenu.classList.toggle('show')
         topPartBurger.classList.toggle('close')
         middlePartBurger.classList.toggle('close')
@@ -119,7 +119,7 @@ function navBar() {
     const logo = document.querySelector('.logo')
     // const lightDarkModeToggle = document.querySelector('.light-dark-mode-toggle')
     // console.log(lightDarkModeToggle)
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
         if (window.scrollY > 20) {
             header.style.backgroundColor = '#3C6DC5'
             header.style.boxShadow = '0 1px 10px rgba(0,0,0,0.5)'
@@ -156,7 +156,7 @@ function searchFunction(recipeData) {
     const originalContent = cardCollection.innerHTML
 
 
-    searchInput.addEventListener('keydown', function (event) {
+    searchInput.addEventListener('keydown', function(event) {
         const searchInputValue = searchInput.value.toLowerCase()
         // display filtered recipes
         if (event.key === "Enter" && searchInputValue != '') {
@@ -179,7 +179,7 @@ function filterFunction(recipeData) {
     const searchAndFilterContainer = document.querySelector('.search-and-filter-container')
 
     // shows filter menu
-    filterButton.addEventListener('click', function () {
+    filterButton.addEventListener('click', function() {
         filterContainer.classList.toggle('show')
         searchAndFilterContainer.classList.toggle('show')
     })
@@ -188,7 +188,7 @@ function filterFunction(recipeData) {
     const checkboxItems = document.querySelectorAll('.checkbox-item')
     const submitFilter = document.querySelector('.apply-filter')
     const cardCollection = document.querySelector('.card-collection')
-    submitFilter.addEventListener('click', function () {
+    submitFilter.addEventListener('click', function() {
         const selectedFilters = Array.from(checkboxItems)
             .filter(checkbox => checkbox.checked)
             .map(checkbox => checkbox.value);
@@ -206,7 +206,7 @@ function filterFunction(recipeData) {
 
     // close filter menu
     const closeFilter = document.querySelector('.close-filter')
-    closeFilter.addEventListener('click', function () {
+    closeFilter.addEventListener('click', function() {
         filterContainer.classList.toggle('show')
         searchAndFilterContainer.classList.toggle('show')
     })
@@ -215,7 +215,7 @@ function filterFunction(recipeData) {
 // renders html to show the recipes based from filter/search input of users
 function renderItems(container, data, itemToRender, input) {
     const xhr = new XMLHttpRequest();
-    xhr.onload = function () {
+    xhr.onload = function() {
         container.innerHTML = this.responseText
         const sectionHeading = container.querySelector('.section-heading');
         const breadcrumbNavigation = document.querySelector(".breadcrumb-navigation-container")
@@ -351,7 +351,7 @@ function updateDuplicateCardInformation(cardClone, number, data, section) {
         let currentId = element.id;
         element.id = `${currentId}-${section}-${number.toString()}`
     }
-    
+
     const recipeLink = document.getElementById(`link-${section}-${number}`)
     recipeLink.href = recipe_link
 
@@ -407,10 +407,10 @@ function bookmarkInteraction(section, recipeData) {
 
         const bookmarksList = JSON.parse(localStorage.getItem('bookmarks')) || []
         if (bookmarksList.some(bookmark => bookmark.recipe_title === recipeTitle)) {
-            bookmarkButton.style.color ='#a78a1b'
+            bookmarkButton.style.color = '#a78a1b'
         }
 
-        bookmarkButton.addEventListener('click', function () {
+        bookmarkButton.addEventListener('click', function() {
             const data = recipeData.filter(item => item.recipe_title.includes(recipeTitle))
             changeColor(bookmarkColor, '#a78a1b', 'bookmark', data, recipeTitle)
         });
@@ -460,7 +460,7 @@ function copyLinkInteraction(section) {
             tempAnchor.href = recipeLink
             let newRecipeLink = tempAnchor.href
 
-            copyButton.addEventListener('click', function () {
+            copyButton.addEventListener('click', function() {
                 copyLink(newRecipeLink)
             })
         } catch (error) {

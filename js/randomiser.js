@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async function () {
+document.addEventListener('DOMContentLoaded', async function() {
     try {
         // Load json file
         let recipeData = await loadJSON();
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const topPartBurger = document.querySelector('.burger-top-part')
         const middlePartBurger = document.querySelector('.burger-middle-part')
         const bottomPartBurger = document.querySelector('.burger-bottom-part')
-        hamburgerIcon.addEventListener('click', function () {
+        hamburgerIcon.addEventListener('click', function() {
             navigationMenu.classList.toggle('show')
             topPartBurger.classList.toggle('close')
             middlePartBurger.classList.toggle('close')
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const logo = document.querySelector('.logo')
         // const lightDarkModeToggle = document.querySelector('.light-dark-mode-toggle')
         // console.log(lightDarkModeToggle)
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function() {
             if (window.scrollY > 20) {
                 header.style.backgroundColor = '#3C6DC5'
                 header.style.boxShadow = '0 1px 10px rgba(0,0,0,0.5)'
@@ -131,7 +131,7 @@ async function loadJSON() {
     }
 }
 
-function updateCardInformation(randomRecipe){
+function updateCardInformation(randomRecipe) {
     // Get data for the random recipe
     const {
         recipe_link,
@@ -147,11 +147,11 @@ function updateCardInformation(randomRecipe){
     // Update HTML elements with recipe data
     const recipeLink = document.getElementById('link');
     recipeLink.href = recipe_link;
-    
+
     const recipePictureContainer = document.getElementById(`recipe-image`)
     const recipeImageSource = recipePictureContainer.querySelectorAll('source')
     const recipeImage = recipePictureContainer.querySelector('img')
-    recipeImageSource.forEach(source =>{
+    recipeImageSource.forEach(source => {
         const mediaQuery = source.getAttribute('media')
 
         if (mediaQuery === "(min-width: 582px)") {
@@ -171,12 +171,12 @@ function updateCardInformation(randomRecipe){
 
     const prepTime = document.getElementById(`prep-time`);
     prepTime.innerHTML = `<strong>Prep Time:</strong> ${prep_time}`;
-    
+
     const recipeAllergens = document.getElementById(`allergens`);
     let allergenDetails = allergens.map(allergen => `${capitaliseFirstLetter(allergen)}`).join(", ")
-    if (allergenDetails.length === 0){
+    if (allergenDetails.length === 0) {
         allergenDetails = 'None'
-    } 
+    }
     recipeAllergens.innerHTML = `<strong>Allergens:</strong> ` + allergenDetails;
 
     const skillLevel = document.getElementById(`cooking-skill`);
@@ -187,60 +187,5 @@ function updateCardInformation(randomRecipe){
 }
 
 function capitaliseFirstLetter(string) {
-    return string.charAt(0).toUpperCase() +string.slice(1);
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-
-//fuck this, going for another thing. trying recipe choice randomizer. let's hope the group doesn't ignore me and do it anyway. no one is helping me. I am fucked.
-
-// Get reference to the recipes container
-//const recipesContainer = document.getElementById('recipes');
-
-// Function to display a recipe
-//function displayRecipe(recipe) {
-//    const recipeElement = document.createElement('div');
-//    recipeElement.classList.add('recipe');
-//
-//    // HTML structure for the recipe display
-//    const html = `
-//        <img src="${recipe.recipe_image}" alt="${recipe.recipe_title}">
-//        <h2>${recipe.recipe_title}</h2>
-//        <p>${recipe.recipe_description}</p>
-//        <!-- Add more recipe details here -->
-//    `;
-//
-//    recipeElement.innerHTML = html;
-//    recipesContainer.appendChild(recipeElement);
-//}
-
-// Function to fetch recipe data and display recipes
-//function fetchRecipeDataAndDisplay() {
-//    fetch('recipe_data.json')
-//        .then(response => response.json())
-//        .then(data => {
-//            // Display each recipe
-//            data.forEach(recipe => displayRecipe(recipe));
-//        })
-//        .catch(error => console.error('Error fetching recipe data:', error));
-//}
-
-// Call the function to fetch recipe data and display recipes
-//fetchRecipeDataAndDisplay();
-
-
-
-
-//var coll = document.getElementsByClassName("collapsible");
-//var i;
-
-//for (i = 0; i < coll.length; i++) {
-//  coll[i].addEventListener("click", function() {
-//    this.classList.toggle("active");
-//    var content = this.nextElementSibling;
-//    if (content.style.display === "block") {
-//      content.style.display = "none";
-//    } else {
-//      content.style.display = "block";
-//    }
-//  });
-//}

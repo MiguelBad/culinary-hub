@@ -11,7 +11,7 @@ function navBar() {
     const topPartBurger = document.querySelector('.burger-top-part')
     const middlePartBurger = document.querySelector('.burger-middle-part')
     const bottomPartBurger = document.querySelector('.burger-bottom-part')
-    hamburgerIcon.addEventListener('click', function () {
+    hamburgerIcon.addEventListener('click', function() {
         navigationMenu.classList.toggle('show')
         topPartBurger.classList.toggle('close')
         middlePartBurger.classList.toggle('close')
@@ -37,7 +37,7 @@ function navBar() {
     const logo = document.querySelector('.logo')
     // const lightDarkModeToggle = document.querySelector('.light-dark-mode-toggle')
     // console.log(lightDarkModeToggle)
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
         if (window.scrollY > 20) {
             header.style.backgroundColor = '#3C6DC5'
             header.style.boxShadow = '0 1px 10px rgba(0,0,0,0.5)'

@@ -1,143 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-   
-:root{
-    font-family: 'Roboto';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    font-family: "Roboto";
     font-size: 16px;
     --bg-primary: rgb(194, 185, 176);
     --bg-secondary: #e7e1db;
-    --bg-third: #201f1d; 
-    --font-primary: #0B0C10;
-    --font-secondary: #f3f3f3;  
+    --bg-third: #201f1d;
+    --font-primary: #0b0c10;
+    --font-secondary: #f3f3f3;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: var(--bg-primary);
 }
 
-.card-container{
+.card-container {
     display: grid;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-.card{
+.card {
     width: 20rem;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0.3rem 0.6rem 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
     background-color: var(--bg-secondary);
 }
 
-
-
-.image-container{
+.image-container {
     height: 20rem;
     overflow: hidden;
-    position:relative;
-    
-    .pizza-image{
+    position: relative;
+
+    .pizza-image {
         width: 100%;
         position: absolute;
-        top:50%;
+        top: 50%;
         transform: translateY(-50%);
     }
 }
 
-.caption-container{
+.caption-container {
     padding: 1rem 2rem;
     height: 9rem;
-    
-    .image_title{
+
+    .image_title {
         font-size: 25px;
         margin-bottom: 0.5rem;
         font-weight: 500;
     }
-    
-    p{
+
+    p {
         font-weight: 300;
         color: var(--font-primary);
     }
-    
-    a{
+
+    a {
         color: var(--font-primary);
         text-decoration: none;
     }
 }
 
-.bottom-part-card{
+.bottom-part-card {
     display: flex;
     margin: 0 2rem 1.5rem 2rem;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.food-category{
+.food-category {
     background-color: var(--bg-primary);
     padding: 0.2rem 1rem;
     border-radius: 0.6rem;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     height: 1.3rem;
-    
-    .heart, .bookmark, .share-button{
+
+    .heart,
+    .bookmark,
+    .share-button {
         align-self: flex-start;
         transition: transform 0.25s;
         cursor: pointer;
     }
 
-    .heart{
+    .heart {
         width: 1.8rem;
         transform: translateY(3px);
     }
 
-    .bookmark{
+    .bookmark {
         width: 1.19rem;
     }
 
-    .share-button{
+    .share-button {
         width: 1.05rem;
         transform: translateY(-2.5px);
     }
 }
- 
-.heart-container{
+
+.heart-container {
     display: flex;
     gap: 0.25rem;
     align-items: center;
-
 }
 
-.heart-number{
+.heart-number {
     font-weight: 300;
 }
 
-.heart-color{
-    fill:var(--bg-secondary);
-    stroke: black;
-}
-
-
-.bookmark-color{
+.heart-color {
     fill: var(--bg-secondary);
     stroke: black;
 }
 
-.hide-bg-content{
-    top:0;
+.bookmark-color {
+    fill: var(--bg-secondary);
+    stroke: black;
+}
+
+.hide-bg-content {
+    top: 0;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -148,7 +145,7 @@ body{
     z-index: 99;
 }
 
-.share-popup{
+.share-popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -157,28 +154,28 @@ body{
     background-color: var(--bg-third);
     z-index: 100;
     border-radius: 2rem;
-    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease;
 
-    .share-header{
+    .share-header {
         display: flex;
         margin: 2rem 3rem;
     }
 
-    .share{
+    .share {
         color: var(--font-secondary);
         font-weight: 500;
         font-size: 20px;
         width: 100%;
     }
 
-    .close-share{
+    .close-share {
         cursor: pointer;
     }
 
-    .share-icons{
+    .share-icons {
         display: flex;
         margin: 0 3rem;
         padding-bottom: 2rem;
@@ -186,18 +183,18 @@ body{
         align-items: center;
     }
 
-    .idividual-share{
+    .idividual-share {
         cursor: pointer;
         height: 3.125rem;
     }
 
-    #email{
+    #email {
         height: 2.75rem;
     }
 
-    .share-link-container{
+    .share-link-container {
         margin: 0 2.5rem 0 2.5rem;
-        width:20rem;
+        width: 20rem;
         height: 2.5rem;
         background-color: var(--font-primary);
         border-radius: 0.5rem;
@@ -207,9 +204,9 @@ body{
         margin-bottom: 2rem;
     }
 
-    .share-link{
+    .share-link {
         margin-left: 1rem;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         color: var(--font-secondary);
         opacity: 0.5;
         border: none;
@@ -217,7 +214,7 @@ body{
         font-style: italic;
     }
 
-    .copy-button{
+    .copy-button {
         background-color: var(--font-secondary);
         margin: 0 1rem;
         padding: 0.2rem 1rem;
@@ -227,7 +224,7 @@ body{
     }
 }
 
-.copied-clipboard{
+.copied-clipboard {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -240,142 +237,139 @@ body{
     z-index: 100;
 }
 
-@media screen and (min-width: 1367px){
-    :root{
+@media screen and (min-width: 1367px) {
+    :root {
         font-size: 16px;
     }
 
-    .card{
+    .card {
         transition: box-shadow 0.2s ease;
-        
     }
 
-    .card:hover{
+    .card:hover {
         box-shadow: 0 0.3rem 0.6rem 0 rgba(107, 105, 114, 0.4);
     }
 
-    .bottom-part-card{
+    .bottom-part-card {
         margin: 0 2rem 1.2rem 2rem;
     }
 
-
-    .heart:hover{
+    .heart:hover {
         transform: scale(1.1) translateY(3px);
     }
 
-    .bookmark:hover{
+    .bookmark:hover {
         transform: scale(1.1);
-    }    
+    }
 
-    .share-button:hover{
+    .share-button:hover {
         transform: scale(1.1) translateY(-2.5px);
-    }   
+    }
 }
 
-@media screen and (max-width: 1366px) and (min-width:534px){
-    :root{
+@media screen and (max-width: 1366px) and (min-width: 534px) {
+    :root {
         font-size: 11px;
     }
 
-    .bottom-part-card{
+    .bottom-part-card {
         margin: 0 2rem 1.5rem 2rem;
     }
 
-    .card:hover{
+    .card:hover {
         box-shadow: 0 0.3rem 0.6rem 0 rgba(107, 105, 114, 0.4);
     }
 
-
-    .caption-container{
+    .caption-container {
         height: 13rem;
 
-        .image_title{
+        .image_title {
             font-size: 23px;
         }
 
-        p{
+        p {
             font-size: 15px;
         }
     }
 
-    .heart-number{
+    .heart-number {
         font-size: 14px;
     }
 
-    .food-category{
+    .food-category {
         font-size: 13px;
     }
-    .icons{
+    .icons {
         height: 1.5rem;
-        
-        .heart{
+
+        .heart {
             transform: translateY(2px);
             width: 2rem;
         }
 
-        .bookmark{
+        .bookmark {
             width: 1.3rem;
         }
 
-        .share-button{
+        .share-button {
             width: 1.2rem;
             transform: translateY(-2px);
         }
     }
 
-    .heart:hover{
+    .heart:hover {
         transform: scale(1.1) translateY(2px);
     }
 
-    .bookmark:hover{
+    .bookmark:hover {
         transform: scale(1.1);
-    }    
+    }
 
-    .share-button:hover{
+    .share-button:hover {
         transform: scale(1.1) translateY(-2px);
-    }   
+    }
 }
 
-@media screen and (max-width:533px){
-    :root{
+@media screen and (max-width: 533px) {
+    :root {
         font-size: 8px;
     }
 
-   .caption-container{
+    .caption-container {
         height: 10rem;
-        .image_title{
+        .image_title {
             font-size: 15px;
         }
 
-        p{
+        p {
             font-size: 12px;
         }
     }
 
-    .heart-number{
+    .heart-number {
         font-size: 10px;
     }
 
-    .icons{
+    .icons {
         height: 1.5rem;
 
-        .heart{
+        .heart {
             transform: translateY(2px);
             width: 2rem;
         }
 
-        .bookmark{
+        .bookmark {
             width: 1.3rem;
             transform: translateY(1px);
         }
 
-        .share-button{
+        .share-button {
             width: 1.15rem;
             transform: translateY(0.3px);
         }
     }
-    
-    .food-category{
+
+    .food-category {
         font-size: 10px;
     }
 }

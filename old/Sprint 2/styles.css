@@ -1,97 +1,103 @@
-div.col-3,div.col-5,label.col-2,label.col-5,nav ul,p.col-5,p.col-9{
-    padding:0
+div.col-3,
+div.col-5,
+label.col-2,
+label.col-5,
+nav ul,
+p.col-5,
+p.col-9 {
+    padding: 0;
 }
 
-body{
-    background-color:#e0ccbe
+body {
+    background-color: #e0ccbe;
 }
 
-header{
-    padding:40px 0;
-    background-color:#3c3633;
-    box-shadow:0 3px 5px 0 rgba(0,0,0,.7)
+header {
+    padding: 40px 0;
+    background-color: #3c3633;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
 }
 
-nav ul{
-    list-style-type:none;
-    margin:0;
+nav ul {
+    list-style-type: none;
+    margin: 0;
     text-align: right;
 }
 
-nav a{
-    text-decoration:none;
-    color:#eeedeb;
-    font-size:15px;
+nav a {
+    text-decoration: none;
+    color: #eeedeb;
+    font-size: 15px;
     font-weight: 500;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     color: #eeedeb;
     font-size: 25px;
     font-weight: 800;
 }
 
-nav a:hover{
-    color:#3f3f3f
+nav a:hover {
+    color: #3f3f3f;
 }
 
-fieldset{
-    margin:100px auto;
-    padding:50px;
-    background-color:#fdf6ee;
-    border-radius:20px;
-    box-shadow:5px 5px 5px 1px rgba(0,0,0,.3);
-    max-width:800px
+fieldset {
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #fdf6ee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
 }
 
-legend{
-    font-size:30px;
-    font-weight:700;
-    padding-bottom:40px;
-    margin:0
+legend {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    margin: 0;
 }
 
-.query{
-    margin:10px 0
+.query {
+    margin: 10px 0;
 }
 
-.errorMessage{
-    visibility:hidden;
-    font-size:12px;
-    color:red
+.errorMessage {
+    visibility: hidden;
+    font-size: 12px;
+    color: red;
 }
 
-input.col-2{
-    margin-left:30px
+input.col-2 {
+    margin-left: 30px;
 }
 
-.radiospacing{
-    margin-top:10px;
-    padding-left:5px;
-    padding-right:20px
+.radiospacing {
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 20px;
 }
 
-h1{
-    font-size:20px
+h1 {
+    font-size: 20px;
 }
 
-.checkboxSpacing{
-    margin:0
+.checkboxSpacing {
+    margin: 0;
 }
 
-.checkboxSpacing label{
-    margin-left:20px
+.checkboxSpacing label {
+    margin-left: 20px;
 }
 
-.submitResetSpacing{
-    margin-top:20px
+.submitResetSpacing {
+    margin-top: 20px;
 }
 
-.spacingCheck{
-    margin-top:40px
+.spacingCheck {
+    margin-top: 40px;
 }
 
-.errorBorder{
-    border:1px solid red
+.errorBorder {
+    border: 1px solid red;
 }

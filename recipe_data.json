@@ -86,8 +86,7 @@
             "Iron": "2.5mg",
             "Potassium": "400mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Cheesy Meatballs and Mushrooms",
         "recipe_image": "images/french-onion-meatballs.webp",
@@ -144,7 +143,7 @@
                 "quantity": "4"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Combine 1 egg (lightly whisked), 500g Coles Beef 3 Star Regular Mince, 50g (1 cup) panko breadcrumbs, and 1 & 1/2 tbsp French onion soup mix in a large bowl. Use your hands to mix evenly.",
             "Roll a slightly heaped tablespoonful of the mixture into a ball, then flatten slightly. Place a small piece (about 4g each) of Colby cheese in the center of the flattened ball. Enclose the cheese and reshape the mixture firmly into a ball. Repeat with the remaining mixture and cheese. Place on a tray and transfer to the fridge for 30 minutes to chill.",
             "Heat 1 tbsp vegetable oil in a large non-stick frying pan over medium-high heat. Add half of the meatballs. Cook, turning occasionally, for 5 minutes or until browned evenly. Transfer to a plate. Repeat with remaining meatballs.",
@@ -168,8 +167,7 @@
             "Iron": "4mg",
             "Potassium": "780mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Healthy Chicken with Mushrooms",
         "recipe_image": "images/Chicken-in-Mushroom.webp",
@@ -246,7 +244,7 @@
             "Return the cooked chicken to the pan. Pour in the prepared stock mixture and simmer for 3-4 minutes or until the chicken is fully cooked and the mushrooms are tender.",
             "Sprinkle with chopped fresh continental parsley leaves.",
             "Serve with steamed green beans."
-        ],        
+        ],
         "nutrition_facts": {
             "Calories": "350 calories",
             "Total Fat": "14g",
@@ -262,8 +260,7 @@
             "Iron": "3mg",
             "Potassium": "700mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=One-pan Vegetarian Paella",
         "recipe_image": "images/Vegetable-Paella.webp",
@@ -335,8 +332,8 @@
                 "ingredient_name": "Lemon wedges",
                 "quantity": "To serve"
             }
-        ],        
-        "instructions": [    
+        ],
+        "instructions": [
             "Heat 2 tbsp vegetable oil in a large, heavy-based, ovenproof casserole dish over medium heat.",
             "Add 1 coarsely chopped brown onion, 1 coarsely chopped red capsicum (deseeded), and 1 coarsely chopped green capsicum (deseeded). Cook, stirring, for 5 minutes or until the onion is soft.",
             "Add 2 crushed garlic cloves and cook for 30 seconds or until aromatic.",
@@ -363,8 +360,7 @@
             "Iron": "2-3mg",
             "Potassium": "400-500mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Satay Noodles with Tofu",
         "recipe_image": "images/satay-noodles-with-tofu.webp",
@@ -425,7 +421,7 @@
                 "quantity": "to serve (optional)"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Cook 2 x 90g dried ramen noodles in a saucepan of boiling water according to packet directions. Add 150g (1 cup) frozen peas and 150g (1 cup) podded frozen edamame to the pan for the last 2 minutes of cooking. Drain and rinse well under warm water.",
             "Heat a non-stick frying pan over medium heat. Spray with oil. Cook the 200g marinated teriyaki tofu halves for 1-2 minutes on each side until light golden. Cut each tofu piece into 4 triangles.",
             "Place the cooked noodles, peas, and edamame in a large bowl. Add 125g satay sauce to the bowl and toss to combine everything. Divide the noodle mixture among serving bowls.",
@@ -447,8 +443,7 @@
             "Iron": "4mg",
             "Potassium": "500mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Breakfast Beans on Toast",
         "recipe_image": "images/Breakfast-beans-on-toast.webp",
@@ -505,7 +500,7 @@
                 "quantity": "4"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Preheat oven to 180C or 160C fan. Heat oil in a large, heatproof casserole dish over medium heat. Cook onion and garlic until translucent.",
             "Add bacon and cook for 3-4 minutes.",
             "Add cannellini beans, tomato paste, diced tomatoes, brown sugar, and balsamic vinegar. Stir to combine.",
@@ -528,8 +523,7 @@
             "Iron": "3mg",
             "Potassium": "600mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Keto Pancakes Breakfast Recipe",
         "recipe_image": "images/keto-pancakes.webp",
@@ -578,7 +572,7 @@
                 "quantity": "To serve (optional)"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Beat almond meal and cream cheese together until combined.",
             "Gradually add eggs and beat until smooth and lump-free.",
             "Stir in vanilla extract and baking powder.",
@@ -605,8 +599,7 @@
             "Iron": "1mg",
             "Potassium": "130mg"
         }
-    }
-    ,    
+    },
     {
         "recipe_link": "full_details.html?recipe=Ultimate Vegan Breakfast Wrap",
         "recipe_image": "images/ultimate-vegan-breakfast-wrap.webp",
@@ -655,7 +648,7 @@
                 "quantity": "1, for serving"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Coarsely mash the 125g can of black beans (rinsed and drained) in a bowl.",
             "Stir in a pinch of dried chilli flakes and 2 tsp of fresh lemon juice. Season with salt and pepper to taste.",
             "Spread the prepared bean mixture over a 40g wholegrain wrap.",
@@ -729,7 +722,7 @@
                 "quantity": "finely chopped, to serve"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Microwave potatoes per packet instructions for 6-8 mins, until tender. Set aside, covered with foil.",
             "Brush steaks with 1 tbsp oil, season. Cook each side in non-stick pan over medium heat, 3-4 mins.",
             "Transfer steaks to plate, cover with foil. Increase heat to medium-high.",
@@ -785,7 +778,7 @@
                 "quantity": "1 tbsp"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Place 8 baby coliban potatoes and 2 short cut bacon rashers in air fryer basket.",
             "Spray with olive oil and season with salt.",
             "Air fry at 180C for 15 minutes, turning halfway through cooking, until potatoes are tender and bacon is crisp.",
@@ -824,7 +817,7 @@
         "other_categories": ["Healthy", "Breakfast"],
         "ingredients": [
             {
-                "ingredient_name": "baby spinach", 
+                "ingredient_name": "baby spinach",
                 "quantity": "50g"
             },
             {
@@ -832,11 +825,11 @@
                 "quantity": "75g (1/2 cup)"
             },
             {
-                "ingredient_name": "soft-boiled egg (peeled, sliced)", 
+                "ingredient_name": "soft-boiled egg (peeled, sliced)",
                 "quantity": "1"
             },
             {
-                "ingredient_name": "avocado (sliced)", 
+                "ingredient_name": "avocado (sliced)",
                 "quantity": "1/4"
             },
             {
@@ -844,15 +837,15 @@
                 "quantity": "1 tsp"
             },
             {
-                "ingredient_name": "extra virgin olive oil", 
+                "ingredient_name": "extra virgin olive oil",
                 "quantity": "1 tsp"
             },
             {
-                "ingredient_name": "chopped roasted", 
+                "ingredient_name": "chopped roasted",
                 "quantity": "2 tsp"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Place spinach in colander.",
             "Pour boiling water over spinach.",
             "Squeeze excess liquid from spinach.",
@@ -916,7 +909,7 @@
                 "quantity": "1/2 cup (60g)"
             }
         ],
-        "instructions": [    
+        "instructions": [
             "Preheat oven to 180°C. Grease 8 holes of a 1/3-cup (80ml) non-stick muffin pan.",
             "Heat a non-stick frying pan over high heat. Add chopped bacon and sliced mushrooms. Cook for 2 mins.",
             "Add finely chopped broccoli. Cook for 1 min until tender.",
@@ -1119,7 +1112,7 @@
             {
                 "ingredient_name": "green shallots, to serve",
                 "quantity": "to serve"
-            }            
+            }
         ],
         "instructions": [
             "Combine soy sauce, sugar, cooking wine, five spice, orange rind and juice, garlic, ginger, chilli, star anise, cinnamon, shallot and stock in a medium bowl. Stir to combine.",

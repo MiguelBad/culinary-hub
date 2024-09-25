@@ -1,132 +1,124 @@
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener("DOMContentLoaded", async function () {
     try {
         // Load json file
         let recipeData = await loadJSON();
         // get users preferences and not show those recipes with that preference
-        const preferences = JSON.parse(localStorage.getItem('preferences')) || []
+        const preferences = JSON.parse(localStorage.getItem("preferences")) || [];
         if (preferences.length != 0) {
-            const unwantedRecipe = recipeData.filter(
-                item => item.allergens.some(
-                    allergens => preferences.some(
-                        category => category.includes(allergens))))
+            const unwantedRecipe = recipeData.filter((item) =>
+                item.allergens.some((allergens) =>
+                    preferences.some((category) => category.includes(allergens))
+                )
+            );
 
-            recipeData = recipeData.filter(
-                recipe => !unwantedRecipe.includes(recipe))
+            recipeData = recipeData.filter((recipe) => !unwantedRecipe.includes(recipe));
         }
 
         // hides and shows the menu when clicked
-        const header = document.querySelector('header')
-        const hamburgerIcon = document.querySelector('.hamburger-menu')
-        const navigationMenu = document.querySelector('.nav-link-list')
-        const topPartBurger = document.querySelector('.burger-top-part')
-        const middlePartBurger = document.querySelector('.burger-middle-part')
-        const bottomPartBurger = document.querySelector('.burger-bottom-part')
-        hamburgerIcon.addEventListener('click', function() {
-            navigationMenu.classList.toggle('show')
-            topPartBurger.classList.toggle('close')
-            middlePartBurger.classList.toggle('close')
-            bottomPartBurger.classList.toggle('close')
-            header.classList.toggle('show')
-        })
-        const navigationLinks = document.querySelectorAll('.nav-link')
-        navigationLinks.forEach(links => {
-            if (links.textContent != 'Home')
-                links.addEventListener('click', () => {
-                    navigationMenu.classList.toggle('show')
-                    topPartBurger.classList.toggle('close')
-                    middlePartBurger.classList.toggle('close')
-                    bottomPartBurger.classList.toggle('close')
-                    header.classList.toggle('show')
-                }
-                )
+        const header = document.querySelector("header");
+        const hamburgerIcon = document.querySelector(".hamburger-menu");
+        const navigationMenu = document.querySelector(".nav-link-list");
+        const topPartBurger = document.querySelector(".burger-top-part");
+        const middlePartBurger = document.querySelector(".burger-middle-part");
+        const bottomPartBurger = document.querySelector(".burger-bottom-part");
+        hamburgerIcon.addEventListener("click", function () {
+            navigationMenu.classList.toggle("show");
+            topPartBurger.classList.toggle("close");
+            middlePartBurger.classList.toggle("close");
+            bottomPartBurger.classList.toggle("close");
+            header.classList.toggle("show");
+        });
+        const navigationLinks = document.querySelectorAll(".nav-link");
+        navigationLinks.forEach((links) => {
+            if (links.textContent != "Home")
+                links.addEventListener("click", () => {
+                    navigationMenu.classList.toggle("show");
+                    topPartBurger.classList.toggle("close");
+                    middlePartBurger.classList.toggle("close");
+                    bottomPartBurger.classList.toggle("close");
+                    header.classList.toggle("show");
+                });
         });
 
         // simple scroll transition for aesthetics
-        const hamburgerIconParts = hamburgerIcon.querySelectorAll('.burger-part')
-        const headerLinks = header.querySelectorAll('a')
-        const logo = document.querySelector('.logo')
+        const hamburgerIconParts = hamburgerIcon.querySelectorAll(".burger-part");
+        const headerLinks = header.querySelectorAll("a");
+        const logo = document.querySelector(".logo");
         // const lightDarkModeToggle = document.querySelector('.light-dark-mode-toggle')
         // console.log(lightDarkModeToggle)
-        window.addEventListener('scroll', function() {
+        window.addEventListener("scroll", function () {
             if (window.scrollY > 20) {
-                header.style.backgroundColor = '#3C6DC5'
-                header.style.boxShadow = '0 1px 10px rgba(0,0,0,0.5)'
-                headerLinks.forEach(link => {
-                    link.style.color = '#FBFBFD'
+                header.style.backgroundColor = "#3C6DC5";
+                header.style.boxShadow = "0 1px 10px rgba(0,0,0,0.5)";
+                headerLinks.forEach((link) => {
+                    link.style.color = "#FBFBFD";
                 });
-                hamburgerIconParts.forEach(part => {
-                    part.style.backgroundColor = '#FBFBFD'
+                hamburgerIconParts.forEach((part) => {
+                    part.style.backgroundColor = "#FBFBFD";
                 });
-                logo.src = 'images/logo_white.webp'
+                logo.src = "images/logo_white.webp";
                 // lightDarkModeToggle.classList.remove("md-dark")
                 // lightDarkModeToggle.classList.add('md-light')
-
             } else {
-                header.style.backgroundColor = '#F2F4FA'
-                header.style.boxShadow = ''
-                headerLinks.forEach(link => {
-                    link.style.color = '#0B0D10'
-                })
-                hamburgerIconParts.forEach(part => {
-                    part.style.backgroundColor = '#0B0D10'
+                header.style.backgroundColor = "#F2F4FA";
+                header.style.boxShadow = "";
+                headerLinks.forEach((link) => {
+                    link.style.color = "#0B0D10";
                 });
-                logo.src = 'images/logo_black.webp'
+                hamburgerIconParts.forEach((part) => {
+                    part.style.backgroundColor = "#0B0D10";
+                });
+                logo.src = "images/logo_black.webp";
                 // lightDarkModeToggle.classList.remove("md-light")
                 // lightDarkModeToggle.classList.add('md-dark')
             }
-        })
+        });
 
         const randomIndex = Math.floor(Math.random() * recipeData.length);
         const randomRecipe = recipeData[randomIndex];
-        updateCardInformation(randomRecipe)
+        updateCardInformation(randomRecipe);
 
-        const randomRecipeButton = document.querySelector('.generate-random-recipe')
-        const card = document.querySelector('.card')
-        let oldIndex = 0
+        const randomRecipeButton = document.querySelector(".generate-random-recipe");
+        const card = document.querySelector(".card");
+        let oldIndex = 0;
         // Select a random recipe
-        randomRecipeButton.addEventListener('click', () => {
+        randomRecipeButton.addEventListener("click", () => {
             let randomIndex;
             do {
                 randomIndex = Math.floor(Math.random() * recipeData.length);
-            } while (oldIndex === randomIndex)
+            } while (oldIndex === randomIndex);
 
-            oldIndex = randomIndex
+            oldIndex = randomIndex;
 
             const randomRecipe = recipeData[randomIndex];
-            card.classList.add('rotate')
-            updateCardInformation(randomRecipe)
+            card.classList.add("rotate");
+            updateCardInformation(randomRecipe);
 
-            randomRecipeButton.disabled = true
-            randomRecipeButton.classList.toggle('load')
-            randomRecipeButton.textContent = 'Loading'
+            randomRecipeButton.disabled = true;
+            randomRecipeButton.classList.toggle("load");
+            randomRecipeButton.textContent = "Loading";
             setTimeout(() => {
-                randomRecipeButton.disabled = false
-                randomRecipeButton.classList.toggle('load')
-                randomRecipeButton.textContent = 'Random'
+                randomRecipeButton.disabled = false;
+                randomRecipeButton.classList.toggle("load");
+                randomRecipeButton.textContent = "Random";
             }, 1000);
-
-        })
-        card.addEventListener('animationend', () => {
-            card.classList.remove('rotate')
-        })
-
-
-
-
-
+        });
+        card.addEventListener("animationend", () => {
+            card.classList.remove("rotate");
+        });
     } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
     }
 });
 
 // Load json file in recipe information
 async function loadJSON() {
     try {
-        const response = await fetch('recipe_data.json');
+        const response = await fetch("recipe_data.json");
         const jsonData = await response.json();
         return jsonData;
     } catch (error) {
-        console.error('Error loading JSON file:', error);
+        console.error("Error loading JSON file:", error);
         throw error; // Re-throw the error to catch it in the calling code
     }
 }
@@ -145,24 +137,24 @@ function updateCardInformation(randomRecipe) {
     } = randomRecipe;
 
     // Update HTML elements with recipe data
-    const recipeLink = document.getElementById('link');
+    const recipeLink = document.getElementById("link");
     recipeLink.href = recipe_link;
 
-    const recipePictureContainer = document.getElementById(`recipe-image`)
-    const recipeImageSource = recipePictureContainer.querySelectorAll('source')
-    const recipeImage = recipePictureContainer.querySelector('img')
-    recipeImageSource.forEach(source => {
-        const mediaQuery = source.getAttribute('media')
+    const recipePictureContainer = document.getElementById(`recipe-image`);
+    const recipeImageSource = recipePictureContainer.querySelectorAll("source");
+    const recipeImage = recipePictureContainer.querySelector("img");
+    recipeImageSource.forEach((source) => {
+        const mediaQuery = source.getAttribute("media");
 
         if (mediaQuery === "(min-width: 582px)") {
-            source.scrset = recipe_image
+            source.scrset = recipe_image;
         } else if (mediaQuery === "(max-width: 581px)") {
-            source.scrset = recipe_image
+            source.scrset = recipe_image;
         }
-    })
-    recipeImage.src = recipe_image
+    });
+    recipeImage.src = recipe_image;
 
-    const recipeTitle = document.getElementById('recipe-title').querySelector('a');
+    const recipeTitle = document.getElementById("recipe-title").querySelector("a");
     recipeTitle.textContent = recipe_title;
     recipeTitle.href = recipe_link;
 
@@ -173,9 +165,11 @@ function updateCardInformation(randomRecipe) {
     prepTime.innerHTML = `<strong>Prep Time:</strong> ${prep_time}`;
 
     const recipeAllergens = document.getElementById(`allergens`);
-    let allergenDetails = allergens.map(allergen => `${capitaliseFirstLetter(allergen)}`).join(", ")
+    let allergenDetails = allergens
+        .map((allergen) => `${capitaliseFirstLetter(allergen)}`)
+        .join(", ");
     if (allergenDetails.length === 0) {
-        allergenDetails = 'None'
+        allergenDetails = "None";
     }
     recipeAllergens.innerHTML = `<strong>Allergens:</strong> ` + allergenDetails;
 

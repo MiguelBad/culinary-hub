@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Submit  a Recipe</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Submit a Recipe</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -11,9 +11,9 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
-        >
-        <link href='styles.css' rel='stylesheet'>
-        <meta name="description" content="Forms for submitting a recipe.">
+        />
+        <link href="styles.css" rel="stylesheet" />
+        <meta name="description" content="Forms for submitting a recipe." />
     </head>
 
     <body>
@@ -25,10 +25,10 @@
                     </div>
                     <nav class="col-9">
                         <ul class="row">
-                            <li class="col"><a href=#>Home</a></li>
-                            <li class="col"><a href=#>Services</a></li>
-                            <li class="col"><a href=#>About Us</a></li>
-                            <li class="col"><a href=#>Contact Us</a></li>
+                            <li class="col"><a href="#">Home</a></li>
+                            <li class="col"><a href="#">Services</a></li>
+                            <li class="col"><a href="#">About Us</a></li>
+                            <li class="col"><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -36,14 +36,15 @@
         </header>
 
         <main>
-            <form class="container" id="form" novalidate><!--- action="/" method="POST"-->
+            <form class="container" id="form" novalidate>
+                <!--- action="/" method="POST"-->
                 <fieldset>
                     <legend class="col text-center">Submit a Recipe</legend>
-                    
-                    <h1>Contact Details</h1>
-                    <hr>
 
-                    <div class='query row'>
+                    <h1>Contact Details</h1>
+                    <hr />
+
+                    <div class="query row">
                         <div class="col-5">
                             <label for="firstName">First Name</label>
                             <span class="indicator">*</span>
@@ -53,15 +54,29 @@
                             <label for="lastName">Last Name</label>
                             <span class="indicator">*</span>
                         </div>
-                        <input placeholder="Enter your first name" class='col-5' id='firstName' name='firstName' type="text" required>
+                        <input
+                            placeholder="Enter your first name"
+                            class="col-5"
+                            id="firstName"
+                            name="firstName"
+                            type="text"
+                            required
+                        />
                         <div class="col-2"></div>
-                        <input placeholder="Enter your last name" class='col-5' type="text" name='lastName' id="lastName" required>
-                        <p id = 'errorFname' class="col-5 errorMessage">No error</p>
+                        <input
+                            placeholder="Enter your last name"
+                            class="col-5"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            required
+                        />
+                        <p id="errorFname" class="col-5 errorMessage">No error</p>
                         <div class="col-2"></div>
-                        <p id = 'errorLname' class="col-5 errorMessage">No error</p>
+                        <p id="errorLname" class="col-5 errorMessage">No error</p>
                     </div>
 
-                    <div class='query row'>
+                    <div class="query row">
                         <div class="col-5">
                             <label for="email">Email</label>
                             <span class="indicator">*</span>
@@ -71,25 +86,47 @@
                             <label for="contactNum">Contact Number</label>
                             <span class="indicator">*</span>
                         </div>
-                        <input placeholder="e.g. you@email.com" class='col-5' type="email" name='email' id="email" required autocomplete="on">
+                        <input
+                            placeholder="e.g. you@email.com"
+                            class="col-5"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            autocomplete="on"
+                        />
                         <div class="col-2"></div>
-                        <input placeholder='+ XX XX XXX XXXX' type="tel" name="contactNum" id="contactNum" class="col-5" required>
-                        <p id = 'errorEmail' class="col-5 errorMessage">No error</p>
+                        <input
+                            placeholder="+ XX XX XXX XXXX"
+                            type="tel"
+                            name="contactNum"
+                            id="contactNum"
+                            class="col-5"
+                            required
+                        />
+                        <p id="errorEmail" class="col-5 errorMessage">No error</p>
                         <div class="col-2"></div>
-                        <p id = 'errorContact' class="col-5 errorMessage">No error</p>
+                        <p id="errorContact" class="col-5 errorMessage">No error</p>
                     </div>
 
                     <h1>Submit your Recipe</h1>
-                    <hr>
+                    <hr />
 
-                    <div class='query row'>
+                    <div class="query row">
                         <div class="col-3">
                             <label for="recipeName">Recipe Name</label>
                             <span class="indicator">*</span>
                         </div>
-                        <input placeholder="Enter recipe name" class='col-9' id='recipeName' name='recipeName' type="text" required>
+                        <input
+                            placeholder="Enter recipe name"
+                            class="col-9"
+                            id="recipeName"
+                            name="recipeName"
+                            type="text"
+                            required
+                        />
                         <div class="col-3"></div>
-                        <p id = 'errorRecipeName' class="col-9 errorMessage">No error</p>
+                        <p id="errorRecipeName" class="col-9 errorMessage">No error</p>
                     </div>
 
                     <div class="query row">
@@ -97,12 +134,19 @@
                             <label for="description">Description</label>
                             <span class="indicator">*</span>
                         </div>
-                        <textarea placeholder="Enter description" class='col-9' name="description" id="description" rows="2"  required></textarea>
+                        <textarea
+                            placeholder="Enter description"
+                            class="col-9"
+                            name="description"
+                            id="description"
+                            rows="2"
+                            required
+                        ></textarea>
                         <div class="col-3"></div>
-                        <p id = 'errorDescription' class="col-9 errorMessage">No error</p>
+                        <p id="errorDescription" class="col-9 errorMessage">No error</p>
                     </div>
 
-                    <div class='query row'>
+                    <div class="query row">
                         <div class="col-5">
                             <label for="cookingTime">Cooking Time (hh:mm)</label>
                             <span class="indicator">*</span>
@@ -112,7 +156,14 @@
                             <label for="difficulty">Difficulty</label>
                             <span class="indicator">*</span>
                         </div>
-                        <input class='col-5' type="time" name='cookingTime' id="cookingTime" value='00:00' required>
+                        <input
+                            class="col-5"
+                            type="time"
+                            name="cookingTime"
+                            id="cookingTime"
+                            value="00:00"
+                            required
+                        />
                         <div class="col-2"></div>
                         <select class="col-5" name="difficulty" id="difficulty" required>
                             <option value="" selected disabled>Select a Difficulty</option>
@@ -120,9 +171,9 @@
                             <option value="medium">Medium</option>
                             <option value="hard">Difficult</option>
                         </select>
-                        <p id = 'errorTime' class="col-5 errorMessage">No error</p>
+                        <p id="errorTime" class="col-5 errorMessage">No error</p>
                         <div class="col-2"></div>
-                        <p id = 'errorDifficulty' class="col-5 errorMessage">No error</p>
+                        <p id="errorDifficulty" class="col-5 errorMessage">No error</p>
                     </div>
 
                     <div class="query row">
@@ -130,9 +181,16 @@
                             <label for="ingredients">Ingredients</label>
                             <span class="indicator">*</span>
                         </div>
-                        <textarea placeholder="Enter ingredients" class='col-9' name="ingredients" id="ingredients" rows="2" required></textarea>
+                        <textarea
+                            placeholder="Enter ingredients"
+                            class="col-9"
+                            name="ingredients"
+                            id="ingredients"
+                            rows="2"
+                            required
+                        ></textarea>
                         <div class="col-3"></div>
-                        <p id = 'errorIngredients' class="col-9 errorMessage">No error</p>
+                        <p id="errorIngredients" class="col-9 errorMessage">No error</p>
                     </div>
 
                     <div class="query row">
@@ -140,43 +198,57 @@
                             <label for="instructions">Instructions</label>
                             <span class="indicator">*</span>
                         </div>
-                        <textarea placeholder="Enter instructions" class='col-9' name="instructions" id="instructions" rows="2" required></textarea>
+                        <textarea
+                            placeholder="Enter instructions"
+                            class="col-9"
+                            name="instructions"
+                            id="instructions"
+                            rows="2"
+                            required
+                        ></textarea>
                         <div class="col-3"></div>
-                        <p id = 'errorInstructions' class="col-9 errorMessage">No error</p>
+                        <p id="errorInstructions" class="col-9 errorMessage">No error</p>
                     </div>
 
                     <div class="query row">
-                        <label class='col-2' for="otherInfo">Other Information</label>
+                        <label class="col-2" for="otherInfo">Other Information</label>
                         <div class="col-1"></div>
-                        <textarea placeholder="Enter additional details (optional)" class='col' name="otherInfo" id="otherInfo" rows="2"></textarea>
+                        <textarea
+                            placeholder="Enter additional details (optional)"
+                            class="col"
+                            name="otherInfo"
+                            id="otherInfo"
+                            rows="2"
+                        ></textarea>
                     </div>
                     <div class="spacingCheck">
                         <div class="checkboxSpacing">
-                            <input type="checkbox" name="receiveEmail" id="receiveEmail">
-                            <label for="receiveEmail">I want to recieve an email notification about the result.</label>
+                            <input type="checkbox" name="receiveEmail" id="receiveEmail" />
+                            <label for="receiveEmail"
+                                >I want to recieve an email notification about the result.</label
+                            >
                         </div>
 
                         <div class="checkboxSpacing">
-                            <input type="checkbox" name="receiveNumber" id="receiveNumber">
-                            <label for="receiveNumber">I want to recieve text notification about the result.</label>
+                            <input type="checkbox" name="receiveNumber" id="receiveNumber" />
+                            <label for="receiveNumber"
+                                >I want to recieve text notification about the result.</label
+                            >
                         </div>
                     </div>
 
                     <div class="query">
                         <div class="row justify-content-end submitResetSpacing">
-                            <input class="col-2" id= 'reset' type="reset" value="Reset">
-                            <input class="col-2 " id = 'submit' type="submit" value="Submit">      
+                            <input class="col-2" id="reset" type="reset" value="Reset" />
+                            <input class="col-2" id="submit" type="submit" value="Submit" />
                         </div>
-                    </div>  
+                    </div>
                 </fieldset>
             </form>
         </main>
 
+        <footer></footer>
 
-        <footer>
-
-        </footer>
-        
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -191,6 +263,5 @@
         ></script>
 
         <script src="input.js"></script>
-
     </body>
 </html>

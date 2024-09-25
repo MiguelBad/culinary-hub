@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-    --bg-primary: #F2F4FA;
-    --bg-secondary: #FBFBFD;
-    --bg-third: #3C6DC5;
+    --bg-primary: #f2f4fa;
+    --bg-secondary: #fbfbfd;
+    --bg-third: #3c6dc5;
     --bg-fourth: rgb(121, 121, 121);
-    --font-primary: #0B0D10;
-    --font-secondary: #FBFBFD;
-    --accent-color: #FF6347; /* Accent color for interactive elements */
-    font-family: 'Roboto', sans-serif;
+    --font-primary: #0b0d10;
+    --font-secondary: #fbfbfd;
+    --accent-color: #ff6347; /* Accent color for interactive elements */
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
 
@@ -23,22 +23,24 @@ body {
     font-family: inherit;
     margin: 7rem 0;
 
-    a{
+    a {
         text-decoration: none;
     }
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: var(--bg-primary);
     z-index: 100;
     text-align: center;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    transition:
+        background-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-.top-nav{
+.top-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,31 +49,31 @@ header{
     padding: 2rem;
     overflow: hidden;
     align-items: center;
-    
-    a{
+
+    a {
         color: var(--font-primary);
-        transition:  color 0.4s ease;
+        transition: color 0.4s ease;
     }
-    
-    .nav-link-list{
+
+    .nav-link-list {
         list-style-type: none;
         display: flex;
         gap: 1.5rem;
         /* padding: 0 0 2rem 0; */
     }
 
-    .logo{
+    .logo {
         /* font-weight: bolder; */
         height: 3rem;
     }
-    .hamburger-menu{
+    .hamburger-menu {
         cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4px;
-        
-        .burger-part{
+
+        .burger-part {
             width: 19px;
             height: 2px;
             border-radius: 20px;
@@ -79,48 +81,50 @@ header{
             transition: background-color 0.4s ease;
         }
 
-        .burger-top-part{
+        .burger-top-part {
             transform-origin: right center;
             transform: rotate(0deg);
             transition: transform 0.2s ease;
-        } 
-        .burger-middle-part{
-            transition: transform 0.2s ease, opacity 0.2s ease;
-        } 
-        .burger-bottom-part{
+        }
+        .burger-middle-part {
+            transition:
+                transform 0.2s ease,
+                opacity 0.2s ease;
+        }
+        .burger-bottom-part {
             transform-origin: right center;
             transform: rotate(0deg);
             transition: transform 0.2s ease;
         }
 
-        .burger-top-part.close{
+        .burger-top-part.close {
             transform-origin: right center;
             transform: rotate(-45deg) translate(1px);
         }
 
-        .burger-middle-part.close{
+        .burger-middle-part.close {
             opacity: 0;
         }
 
-        .burger-bottom-part.close{
+        .burger-bottom-part.close {
             transform-origin: right center;
             transform: rotate(45deg) translate(1px);
         }
     }
 }
 
-.breadcrumb-navigation-container{
+.breadcrumb-navigation-container {
     display: flex;
     align-items: center;
     font-size: 14px;
 
-    a{
+    a {
         color: var(--font-primary);
         text-decoration: underline;
     }
 }
 
-.breadcrumb-navigation-alignment{
+.breadcrumb-navigation-alignment {
     margin: auto;
     padding: 0 0 20px 0;
     width: 80%;
@@ -131,7 +135,7 @@ header{
     width: 80%;
 }
 
-.image-container{
+.image-container {
     aspect-ratio: 1/1;
     width: 100%;
     overflow: hidden;
@@ -140,11 +144,10 @@ header{
     margin: 0 auto;
     animation: fadeInUp 0.5s ease-out forwards;
 
-    .recipe-image{
+    .recipe-image {
         width: 100%;
     }
 }
-
 
 @keyframes fadeInUp {
     from {
@@ -157,7 +160,7 @@ header{
     }
 }
 
-.recipe-details{
+.recipe-details {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -165,21 +168,21 @@ header{
     width: 80%;
     text-align: left;
 
-    .category{
+    .category {
         font-weight: 300;
     }
 
-    .category-information{
+    .category-information {
         font-size: 20px;
     }
 
-    .right-side{
+    .right-side {
         padding: 0 0 0 1.5rem;
-        border-left: 0.5px solid rgba(0,0,0,0.5);
+        border-left: 0.5px solid rgba(0, 0, 0, 0.5);
     }
 }
 
-.tabs{
+.tabs {
     display: flex;
     margin: 3rem 0 0 0;
 }
@@ -189,124 +192,132 @@ header{
     border-radius: 0.5rem 0.5rem 0 0;
     border: none;
     background-color: var(--bg-third);
-    box-shadow: inset 0 -5px 10px -5px rgba(0,0,0,0.5), 0px -5px 10px -5px rgba(0,0,0,0.5);
-    color: white; 
+    box-shadow:
+        inset 0 -5px 10px -5px rgba(0, 0, 0, 0.5),
+        0px -5px 10px -5px rgba(0, 0, 0, 0.5);
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
     z-index: 10;
     font-size: 16px;
 }
 
-.tab-button.active, .tab-button:focus {
+.tab-button.active,
+.tab-button:focus {
     background: var(--bg-secondary);
     outline: none;
     color: var(--font-primary);
-    box-shadow: inset 0px 0px, 0px -5px 10px -10px rgba(0,0,0,0.5);
+    box-shadow:
+        inset 0px 0px,
+        0px -5px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .detail-container {
     background-color: var(--bg-secondary);
     padding: 2rem;
     border-radius: 0 1rem 1rem 1rem;
-    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.5);
-    li{
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+    li {
         margin: 1rem;
     }
 }
 
-.title-caption-container{
+.title-caption-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin: 0 auto 2rem auto;
     width: 80%;
 
-    h2{
+    h2 {
         font-size: 25px;
     }
 }
 
-.back-button:hover, .back-button:focus {
+.back-button:hover,
+.back-button:focus {
     background-color: var(--accent-color);
     color: var(--bg-primary);
 }
 
-@media screen and (max-width: 749px) {   
+@media screen and (max-width: 749px) {
     .back-button {
         /* Adjusting button size for smaller screens */
         padding: 0.4rem 0.8rem;
     }
-    
+
     .breadcrumb-navigation-alignment {
-        .breadcrumb-navigation-container{
+        .breadcrumb-navigation-container {
             align-items: start;
 
-            .material-icons{
+            .material-icons {
                 transform: translateY(-3px);
             }
         }
-
-
     }
     .top-nav {
         padding: 2rem 2rem 0rem 2rem;
 
-        .logo{
+        .logo {
             height: 2.5rem;
         }
 
-        .nav-link-list{
+        .nav-link-list {
             padding: 1rem 0;
             opacity: 0;
             max-height: 0px;
             flex-direction: column;
             width: 100%;
-            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            transition:
+                max-height 0.3s ease-out,
+                opacity 0.3s ease-out;
         }
-        .nav-link-list.show{
+        .nav-link-list.show {
             opacity: 1;
             max-height: 275px;
             padding: 1rem 0 2rem 0;
         }
     }
 
-    header.show{
-        box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    header.show {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     }
 
-    .tab-button{
+    .tab-button {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width:500px){
-    .tab-button{
-        flex: 1
+@media screen and (max-width: 500px) {
+    .tab-button {
+        flex: 1;
     }
 
-    .detail-container{
+    .detail-container {
         border-radius: 0 0 1rem 1rem;
     }
 
-    .recipe-details{
+    .recipe-details {
         gap: 1rem;
-        .category{
+        .category {
             font-size: 14px;
         }
-    
-        .category-information{
+
+        .category-information {
             font-size: 16px;
         }
 
-        .right-side{
+        .right-side {
             padding: 0 0 0 1rem;
         }
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1299px){
-    header.show{
-        box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+@media screen and (min-width: 750px) and (max-width: 1299px) {
+    header.show {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     }
     .back-button {
         /* Larger padding for better desktop usability */
@@ -316,29 +327,35 @@ header{
     .top-nav {
         padding: 2rem 2rem 0rem 2rem;
 
-        .logo{
+        .logo {
             height: 2.5rem;
         }
 
-        .nav-link-list{
+        .nav-link-list {
             padding: 1rem 0;
             opacity: 0;
             max-height: 0px;
             flex-direction: column;
             width: 100%;
-            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            transition:
+                max-height 0.3s ease-out,
+                opacity 0.3s ease-out;
         }
-        .nav-link-list.show{
+        .nav-link-list.show {
             opacity: 1;
             max-height: 275px;
             padding: 1rem 0 2rem 0;
         }
     }
 
-    .breadcrumb-navigation-alignment, .more-information, .title-caption-container, .image-container, .recipe-details, .top-nav{
+    .breadcrumb-navigation-alignment,
+    .more-information,
+    .title-caption-container,
+    .image-container,
+    .recipe-details,
+    .top-nav {
         width: 656px;
     }
-
 }
 @media screen and (min-width: 1300px) {
     .back-button {
@@ -348,13 +365,16 @@ header{
 
     .top-nav {
         width: 992px;
-        .hamburger-menu{
+        .hamburger-menu {
             display: none;
         }
     }
 
-    .breadcrumb-navigation-alignment, .more-information, .title-caption-container, .image-container, .recipe-details{
+    .breadcrumb-navigation-alignment,
+    .more-information,
+    .title-caption-container,
+    .image-container,
+    .recipe-details {
         width: 992px;
     }
-
 }

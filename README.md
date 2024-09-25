@@ -1,4 +1,5 @@
 # School Project
+
 This website was initially committed on [Bitbucket](https://group-16-hit226.bitbucket.io/).
 
 ## Project Brief
